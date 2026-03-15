@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Flamingua Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Promotional landing page for [Flamingua](https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904) — a curriculum-based A1 language learning app for German and French.
 
-Currently, two official plugins are available:
+**Live:** https://thagstrom123.github.io/flamingua-web/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Commands
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install        # Install dependencies
+npm run dev        # Local dev server
+npm run build      # Production build
+npm run deploy     # Build + deploy to GitHub Pages
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Custom Domain (flamingua.com)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+When GoDaddy access is restored:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. In GoDaddy DNS, add a CNAME record: `flamingua.com` → `thagstrom123.github.io`
+2. In this repo's GitHub Settings > Pages, set custom domain to `flamingua.com`
+3. Update `vite.config.ts`: change `base` from `'/flamingua-web/'` to `'/'`
+4. Update OG image paths in `index.html` from `/flamingua-web/` to `/`
+5. Redeploy: `npm run deploy`
+
+## Tech Stack
+
+- React + Vite + TypeScript
+- CSS Modules
+- GitHub Pages via `gh-pages`
+- No router, no UI library, no icon library

@@ -4,7 +4,7 @@ const points = [
   {
     icon: '💸',
     title: 'Language schools cost thousands',
-    desc: 'CHF 2,500–5,000 for a single A1 course. Plus commute, materials, and registration fees.',
+    desc: 'CHF 2,000–4,000 for a single A1 course. Plus commute, materials, and registration fees.',
   },
   {
     icon: '📅',

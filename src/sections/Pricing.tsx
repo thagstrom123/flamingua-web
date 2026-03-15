@@ -23,7 +23,7 @@ export default function Pricing() {
             <tbody>
               <tr>
                 <td>Cost</td>
-                <td>CHF 2,500–5,000</td>
+                <td>CHF 2,000–4,000</td>
                 <td>$13/mo</td>
                 <td>$15/mo</td>
                 <td className={styles.highlight}>€4.99/mo</td>
