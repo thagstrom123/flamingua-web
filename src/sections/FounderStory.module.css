@@ -1,0 +1,20 @@
+.quote {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 32px;
+}
+.text {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-main);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.attribution {
+  font-weight: 600;
+  color: var(--accent);
+  font-style: normal;
+}

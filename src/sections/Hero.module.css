@@ -1,0 +1,32 @@
+.hero {
+  text-align: center;
+  padding: 80px 24px 64px;
+  background: linear-gradient(180deg, var(--accent-light) 0%, var(--bg) 100%);
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 22px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(85, 107, 47, 0.15);
+}
+.headline {
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+.subheadline {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+.note {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (min-width: 768px) {
+  .hero { padding: 120px 40px 80px; }
+  .icon { width: 120px; height: 120px; }
+}

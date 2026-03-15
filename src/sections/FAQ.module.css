@@ -1,0 +1,40 @@
+.list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.item {
+  border-bottom: 1px solid var(--border);
+}
+.question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+}
+.question:hover {
+  color: var(--accent);
+}
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+.arrowOpen {
+  composes: arrow;
+  transform: rotate(180deg);
+}
+.answer {
+  padding: 0 0 20px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
