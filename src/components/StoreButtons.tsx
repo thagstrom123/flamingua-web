@@ -1,16 +1,32 @@
-const APPLE_URL = 'https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904'
-const GOOGLE_URL = 'https://play.google.com/store/apps/details?id=com.flamingua.app'
+const APPLE_BASE_URL = 'https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904'
+const GOOGLE_BASE_URL = 'https://play.google.com/store/apps/details?id=com.flamingua.app'
 
 interface StoreButtonsProps {
   size?: 'normal' | 'small'
 }
 
+// Build tracking URLs with source parameter
+function getTrackingUrls() {
+  const source = typeof window !== 'undefined'
+    ? localStorage.getItem('flamingua_source') || 'direct'
+    : 'direct'
+
+  // Apple uses ct= for campaign tracking (shows in App Store Connect → Analytics → Campaigns)
+  const appleUrl = `${APPLE_BASE_URL}?ct=${source}&mt=8`
+
+  // Google uses utm_source for campaign tracking
+  const googleUrl = `${GOOGLE_BASE_URL}&utm_source=${source}&utm_medium=web`
+
+  return { appleUrl, googleUrl }
+}
+
 export default function StoreButtons({ size = 'normal' }: StoreButtonsProps) {
   const h = size === 'small' ? 40 : 50
+  const { appleUrl, googleUrl } = getTrackingUrls()
 
   return (
     <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', justifyContent: 'center' }}>
-      <a href={APPLE_URL} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
+      <a href={appleUrl} target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
         <svg width={h * 3.1} height={h} viewBox="0 0 155 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="155" height="50" rx="8" fill="#000" />
           <text x="52" y="18" fill="#fff" fontSize="8" fontFamily="system-ui">Download on the</text>
@@ -20,7 +36,7 @@ export default function StoreButtons({ size = 'normal' }: StoreButtonsProps) {
           </g>
         </svg>
       </a>
-      <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+      <a href={googleUrl} target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
         <svg width={h * 3.1} height={h} viewBox="0 0 155 50" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="155" height="50" rx="8" fill="#000" />
           <text x="52" y="18" fill="#fff" fontSize="8" fontFamily="system-ui">GET IT ON</text>
