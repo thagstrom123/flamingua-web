@@ -18,14 +18,43 @@
       gtag('js', new Date());
       gtag('config', 'G-541NYLDKYD');
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://flamingua.com/"},{"@type":"ListItem","position":2,"name":"Grammar","item":"https://flamingua.com/grammar"},{"@type":"ListItem","position":3,"name":"German Word Order","item":"https://flamingua.com/german-word-order"}]
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
+<nav class="site-nav">
+        <div class="nav-content">
+            <a href="/" class="logo">Flamingua</a>
+            <div class="nav-links">
+                <a href="/grammar">Grammar</a>
+                <span class="nav-divider">|</span>
+                <a href="/guides">Exam Prep</a>
+            </div>
+        </div>
+    </nav>
+
+        <div class="container">
+        <nav aria-label="Breadcrumb" style="margin:16px 0;font-size:0.875rem;">
+            <a href="/" style="color:#6B8E6F;text-decoration:none;">Home</a>
+            <span style="margin:0 8px;color:#999;">›</span><a href="/grammar" style="color:#6B8E6F;text-decoration:none;">Grammar</a>
+            <span style="margin:0 8px;color:#999;">›</span>
+            <span style="color:#999;">German Word Order</span>
+        </nav>
+>
         <a href="/grammar" class="back-link">&larr; Grammar Guides</a>
 
         <h1>German Word Order: The V2 Rule</h1>
 
-        <img src="/images/flamingua-encouraging.png" alt="Flamingua mascot learning German grammar" class="mascot">
+        <picture>
+          <source srcset="/images/flamingua-architect.webp" type="image/webp">
+          <img src="/images/flamingua-architect.jpg" alt="Flamingua mascot building — German word order guide" class="mascot" width="400" height="400" loading="lazy">
+        </picture>
 
         <p><strong>German word order confuses everyone at first.</strong> In English, we say "I go tomorrow to Berlin." In German, that's wrong. The verb has to be in second position: "Ich gehe morgen nach Berlin." Or if you start with time: "Morgen gehe ich nach Berlin."</p>
 
@@ -131,8 +160,8 @@
             &check; Designed for A1-A2 learners preparing for Goethe or daily life</p>
             <p><strong>Built after I spent 2000 CHF on courses that threw examples at me without explaining the rules.</strong> Try the first 9 lessons free.</p>
             <div class="download-buttons">
-                <a href="https://apps.apple.com/app/flamingua/id6738290091?utm_source=website&utm_medium=grammar_page&utm_campaign=german_word_order" class="btn btn-primary">Download for iOS</a>
-                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=website&utm_medium=grammar_page&utm_campaign=german_word_order" class="btn btn-primary">Download for Android</a>
+                <a href="https://apps.apple.com/app/flamingua/id6738290091?utm_source=website&utm_medium=grammar_page&utm_campaign=german_word_order" class="btn btn-primary" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'german-word-order', 'platform': 'ios' })">Download for iOS</a>
+                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=website&utm_medium=grammar_page&utm_campaign=german_word_order" class="btn btn-primary" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'german-word-order', 'platform': 'android' })">Download for Android</a>
             </div>
         </div>
 

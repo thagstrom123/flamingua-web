@@ -18,14 +18,43 @@
       gtag('js', new Date());
       gtag('config', 'G-541NYLDKYD');
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://flamingua.com/"},{"@type":"ListItem","position":2,"name":"Grammar","item":"https://flamingua.com/grammar"},{"@type":"ListItem","position":3,"name":"French Partitive Articles","item":"https://flamingua.com/french-partitive-articles"}]
+    }
+    </script>
 </head>
 <body>
+    <nav class="site-nav">
+        <div class="nav-content">
+            <a href="/" class="logo">Flamingua</a>
+            <div class="nav-links">
+                <a href="/grammar">Grammar</a>
+                <span class="nav-divider">|</span>
+                <a href="/guides">Exam Prep</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
+        <nav aria-label="Breadcrumb" style="margin:16px 0;font-size:0.875rem;">
+            <a href="/" style="color:#6B8E6F;text-decoration:none;">Home</a>
+            <span style="margin:0 8px;color:#999;">›</span><a href="/grammar" style="color:#6B8E6F;text-decoration:none;">Grammar</a>
+            <span style="margin:0 8px;color:#999;">›</span>
+            <span style="color:#999;">French Partitive Articles</span>
+        </nav>
+>
         <a href="/grammar" class="back-link">&larr; Grammar Guides</a>
 
         <h1>French Partitive Articles — Du, De La, Des</h1>
 
-        <img src="/images/flamingua-encouraging.png" alt="Flamingua mascot" class="mascot">
+        <picture>
+          <source srcset="/images/flamingua-croissant.webp" type="image/webp">
+          <img src="/images/flamingua-croissant.jpg" alt="Flamingua mascot with croissant — French partitive articles guide" class="mascot" width="400" height="400" loading="lazy">
+        </picture>
 
         <p><strong>Partitive articles express "some" or "an unspecified amount of."</strong> In English, we often leave this word out entirely ("I want coffee"), but in French you must always include it: "Je veux <strong>du</strong> caf&eacute;." This is one of the trickiest concepts for English speakers at A1.</p>
 
@@ -94,10 +123,10 @@
             <h2>Practice Partitive Articles Interactively</h2>
             <p>Flamingua teaches partitive articles through food and shopping conversations. Order at a caf&eacute;, buy groceries, and describe meals — all with AI practice and feedback.</p>
             <div class="store-buttons">
-                <a href="https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904?ct=french-partitive-articles&mt=8">
+                <a href="https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904?ct=french-partitive-articles&mt=8" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'french-partitive-articles', 'platform': 'ios' })">
                     <img src="data:image/svg+xml,%3Csvg width='155' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='155' height='50' rx='8' fill='%23000'/%3E%3Ctext x='52' y='18' fill='%23fff' font-size='8' font-family='system-ui'%3EDownload on the%3C/text%3E%3Ctext x='52' y='35' fill='%23fff' font-size='16' font-weight='600' font-family='system-ui'%3EApp Store%3C/text%3E%3C/svg%3E" alt="Download on App Store">
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=french-partitive-articles&utm_medium=web">
+                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=french-partitive-articles&utm_medium=web" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'french-partitive-articles', 'platform': 'android' })">
                     <img src="data:image/svg+xml,%3Csvg width='155' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='155' height='50' rx='8' fill='%23000'/%3E%3Ctext x='52' y='18' fill='%23fff' font-size='8' font-family='system-ui'%3EGET IT ON%3C/text%3E%3Ctext x='52' y='35' fill='%23fff' font-size='16' font-weight='600' font-family='system-ui'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="Get it on Google Play">
                 </a>
             </div>
