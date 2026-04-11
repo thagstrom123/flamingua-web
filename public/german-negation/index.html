@@ -18,14 +18,43 @@
       gtag('js', new Date());
       gtag('config', 'G-541NYLDKYD');
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://flamingua.com/"},{"@type":"ListItem","position":2,"name":"Grammar","item":"https://flamingua.com/grammar"},{"@type":"ListItem","position":3,"name":"German Negation","item":"https://flamingua.com/german-negation"}]
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
+<nav class="site-nav">
+        <div class="nav-content">
+            <a href="/" class="logo">Flamingua</a>
+            <div class="nav-links">
+                <a href="/grammar">Grammar</a>
+                <span class="nav-divider">|</span>
+                <a href="/guides">Exam Prep</a>
+            </div>
+        </div>
+    </nav>
+
+        <div class="container">
+        <nav aria-label="Breadcrumb" style="margin:16px 0;font-size:0.875rem;">
+            <a href="/" style="color:#6B8E6F;text-decoration:none;">Home</a>
+            <span style="margin:0 8px;color:#999;">›</span><a href="/grammar" style="color:#6B8E6F;text-decoration:none;">Grammar</a>
+            <span style="margin:0 8px;color:#999;">›</span>
+            <span style="color:#999;">German Negation</span>
+        </nav>
+>
         <a href="/grammar" class="back-link">&larr; Grammar Guides</a>
 
         <h1>German Negation: Nicht vs Kein</h1>
 
-        <img src="/images/flamingua-encouraging.png" alt="Flamingua mascot learning German grammar" class="mascot">
+        <picture>
+          <source srcset="/images/flamingua-scientist.webp" type="image/webp">
+          <img src="/images/flamingua-scientist.jpg" alt="Flamingua mascot experimenting — German negation guide" class="mascot" width="400" height="400" loading="lazy">
+        </picture>
 
         <p><strong>German has two ways to say "not" or "no" — nicht and kein.</strong> In English, we just say "not" for everything. In German, you have to choose which one based on what you're negating.</p>
 
@@ -63,7 +92,12 @@
 
         <p><strong>Think of kein as "not a" or "no."</strong> If you would say "a dog" in English, use kein in German to negate it: "no dog" = kein Hund.</p>
 
-        <h2>When to Use Nicht</h2>
+        
+      <picture class="course-diagram">
+        <source srcset="/images/german-negation-diagram.webp" type="image/webp">
+        <img src="/images/german-negation-diagram.jpg" alt="German negation placement rules: nicht position in four sentence types" class="course-img" width="800" loading="lazy" style="max-width:100%;border-radius:12px;margin:1.5rem auto;display:block;">
+      </picture>
+      <h2>When to Use Nicht</h2>
         <p><strong>Use nicht for everything else:</strong></p>
 
         <ul>
@@ -162,8 +196,8 @@
             &check; Designed for A1-A2 learners preparing for Goethe or daily life</p>
             <p><strong>Built after I spent 2000 CHF on courses that expected me to figure out patterns from examples.</strong> Try the first 9 lessons free.</p>
             <div class="download-buttons">
-                <a href="https://apps.apple.com/app/flamingua/id6738290091?utm_source=website&utm_medium=grammar_page&utm_campaign=german_negation" class="btn btn-primary">Download for iOS</a>
-                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=website&utm_medium=grammar_page&utm_campaign=german_negation" class="btn btn-primary">Download for Android</a>
+                <a href="https://apps.apple.com/app/flamingua/id6738290091?utm_source=website&utm_medium=grammar_page&utm_campaign=german_negation" class="btn btn-primary" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'german-negation', 'platform': 'ios' })">Download for iOS</a>
+                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=website&utm_medium=grammar_page&utm_campaign=german_negation" class="btn btn-primary" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'german-negation', 'platform': 'android' })">Download for Android</a>
             </div>
         </div>
 

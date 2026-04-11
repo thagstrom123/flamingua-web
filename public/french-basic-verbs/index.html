@@ -18,14 +18,43 @@
       gtag('js', new Date());
       gtag('config', 'G-541NYLDKYD');
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{"@type":"ListItem","position":1,"name":"Home","item":"https://flamingua.com/"},{"@type":"ListItem","position":2,"name":"Grammar","item":"https://flamingua.com/grammar"},{"@type":"ListItem","position":3,"name":"French Basic Verbs","item":"https://flamingua.com/french-basic-verbs"}]
+    }
+    </script>
 </head>
 <body>
+    <nav class="site-nav">
+        <div class="nav-content">
+            <a href="/" class="logo">Flamingua</a>
+            <div class="nav-links">
+                <a href="/grammar">Grammar</a>
+                <span class="nav-divider">|</span>
+                <a href="/guides">Exam Prep</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
+        <nav aria-label="Breadcrumb" style="margin:16px 0;font-size:0.875rem;">
+            <a href="/" style="color:#6B8E6F;text-decoration:none;">Home</a>
+            <span style="margin:0 8px;color:#999;">›</span><a href="/grammar" style="color:#6B8E6F;text-decoration:none;">Grammar</a>
+            <span style="margin:0 8px;color:#999;">›</span>
+            <span style="color:#999;">French Basic Verbs</span>
+        </nav>
+>
         <a href="/grammar" class="back-link">&larr; Grammar Guides</a>
 
         <h1>&Ecirc;tre, Avoir, Aller — The Three Essential French Verbs</h1>
 
-        <img src="/images/flamingua-encouraging.png" alt="Flamingua mascot" class="mascot">
+        <picture>
+          <source srcset="/images/flamingua-parisien.webp" type="image/webp">
+          <img src="/images/flamingua-parisien.jpg" alt="Flamingua mascot in Paris — French basic verbs guide" class="mascot" width="400" height="400" loading="lazy">
+        </picture>
 
         <p><strong>&Ecirc;tre, avoir, and aller are the foundation of French.</strong> These three irregular verbs appear in almost every conversation and are used to build other tenses. Mastering them is the single most important step at A1.</p>
 
@@ -42,7 +71,12 @@
             <tr><td>ils/elles</td><td><strong>sont</strong></td><td>Ils sont ici. (They are here.)</td></tr>
         </table>
 
-        <h2>Avoir (to have)</h2>
+        
+      <picture class="course-diagram">
+        <source srcset="/images/french-conjugation-cards.webp" type="image/webp">
+        <img src="/images/french-conjugation-cards.jpg" alt="French verb conjugation cards for être, avoir, aller, faire" class="course-img" width="800" loading="lazy" style="max-width:100%;border-radius:12px;margin:1.5rem auto;display:block;">
+      </picture>
+      <h2>Avoir (to have)</h2>
         <p>Avoir expresses possession, age, and many idiomatic expressions:</p>
 
         <table>
@@ -101,10 +135,10 @@
             <h2>Practice These Verbs with AI</h2>
             <p>Flamingua teaches &ecirc;tre, avoir, and aller through real conversations. Introduce yourself, talk about your family, describe your day — all with AI pronunciation feedback.</p>
             <div class="store-buttons">
-                <a href="https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904?ct=french-basic-verbs&mt=8">
+                <a href="https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904?ct=french-basic-verbs&mt=8" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'french-basic-verbs', 'platform': 'ios' })">
                     <img src="data:image/svg+xml,%3Csvg width='155' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='155' height='50' rx='8' fill='%23000'/%3E%3Ctext x='52' y='18' fill='%23fff' font-size='8' font-family='system-ui'%3EDownload on the%3C/text%3E%3Ctext x='52' y='35' fill='%23fff' font-size='16' font-weight='600' font-family='system-ui'%3EApp Store%3C/text%3E%3C/svg%3E" alt="Download on App Store">
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=french-basic-verbs&utm_medium=web">
+                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=french-basic-verbs&utm_medium=web" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'french-basic-verbs', 'platform': 'android' })">
                     <img src="data:image/svg+xml,%3Csvg width='155' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='155' height='50' rx='8' fill='%23000'/%3E%3Ctext x='52' y='18' fill='%23fff' font-size='8' font-family='system-ui'%3EGET IT ON%3C/text%3E%3Ctext x='52' y='35' fill='%23fff' font-size='16' font-weight='600' font-family='system-ui'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="Get it on Google Play">
                 </a>
             </div>

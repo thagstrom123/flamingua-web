@@ -34,12 +34,26 @@
     </style>
 </head>
 <body>
+    <nav class="site-nav">
+        <div class="nav-content">
+            <a href="/" class="logo">Flamingua</a>
+            <div class="nav-links">
+                <a href="/grammar">Grammar</a>
+                <span class="nav-divider">|</span>
+                <a href="/guides">Exam Prep</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <a href="/" class="back-link">&larr; Flamingua</a>
 
         <h1>A1 Exam Preparation Guides</h1>
 
-        <img src="/images/flamingua-encouraging.png" alt="Flamingua mascot encouraging you" class="mascot">
+        <picture>
+          <source srcset="/images/flamingua-discovery.webp" type="image/webp">
+          <img src="/images/flamingua-discovery.jpg" alt="Flamingua mascot exploring — learning guides hub" class="mascot" width="400" height="400" loading="lazy">
+        </picture>
 
         <p>Free guides to help you pass your Goethe A1 or DELF A1 exam. Written by someone who went through A1 exam preparation in Switzerland.</p>
 
@@ -98,10 +112,10 @@
             <h2>Prepare with Flamingua</h2>
             <p>I built Flamingua after going through A1 exam prep myself in Switzerland. Language schools cost CHF 2,000+. Flamingua covers the same curriculum for &euro;4.99/month — with AI speaking practice you can't get from a textbook.</p>
             <div class="store-buttons">
-                <a href="https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904?ct=guides&mt=8">
+                <a href="https://apps.apple.com/us/app/flamingua-a1-french-german/id6759222904?ct=guides&mt=8" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'guides', 'platform': 'ios' })">
                     <img src="data:image/svg+xml,%3Csvg width='155' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='155' height='50' rx='8' fill='%23000'/%3E%3Ctext x='52' y='18' fill='%23fff' font-size='8' font-family='system-ui'%3EDownload on the%3C/text%3E%3Ctext x='52' y='35' fill='%23fff' font-size='16' font-weight='600' font-family='system-ui'%3EApp Store%3C/text%3E%3C/svg%3E" alt="Download on App Store">
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=guides&utm_medium=web">
+                <a href="https://play.google.com/store/apps/details?id=com.flamingua.app&utm_source=guides&utm_medium=web" onclick="gtag('event', 'download_click', { 'event_category': 'download_button', 'event_label': 'guides', 'platform': 'android' })">
                     <img src="data:image/svg+xml,%3Csvg width='155' height='50' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='155' height='50' rx='8' fill='%23000'/%3E%3Ctext x='52' y='18' fill='%23fff' font-size='8' font-family='system-ui'%3EGET IT ON%3C/text%3E%3Ctext x='52' y='35' fill='%23fff' font-size='16' font-weight='600' font-family='system-ui'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="Get it on Google Play">
                 </a>
             </div>
